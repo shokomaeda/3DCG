@@ -4,166 +4,177 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>3DCG Portfolio</title>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./index.css">
+	
 </head>
 <body>
-	<header>
+	<header class="header">
 		<h1>3DCG Portfolio</h1>
 	</header>
 
 	<main class="main">
 		<section class="section">
 			<div class="inner">
-				<h2 class="heading">ARTWORK</h2>
-
-				<ul>
-					<li>
+				<ul id="js-gallery" class="gallery">
+					<li data-src="./images/desk.png" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/desk1.png" alt="desk1">
+							<img src="./images/desk.png" alt="desk">
 						</picture>
-						<picture>
-							<img src="./images/desk2.png" alt="desk2">
-						</picture>
-						<h3>机と椅子</h3>
-						<p>
-							初めてBlenderを使って作った作品です。<br>
-							操作が難しく、時間がかかりました。
-						</p>
+						<div class="gallery__caption">
+							<h3>机と椅子</h3>
+							<p>
+								初めてBlenderを使って作った作品です。<br>
+								操作が難しく、時間がかかりました。
+							</p>
+						<div>
 					</li>
 
-					<li>
+					<li data-src="./images/candy.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/candy.png" alt="candy">
+							<img src="./images/candy.jpg" alt="candy">
 						</picture>
-						<h3>キャンディ</h3>
-						<p>
-							Blenderを始めてから二日目に作ったものです。<br>
-							既存の球の加工を覚えました。
-						</p>
+						<div class="gallery__caption">
+							<h3>キャンディ</h3>
+							<p>
+								Blenderを始めてから二日目に作ったものです。<br>
+								既存の球の加工を覚えました。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/medicine.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/medicine.png" alt="medicine">
+							<img src="./images/medicine.jpg" alt="medicine">
 						</picture>
-						<h3>カプセル</h3>
-						<p>
-							マテリアルを使って、透けている様子を表現しました。<br>
-							カラフルでポップな感じにしました。
-						</p>
+						<div class="gallery__caption">
+							<h3>カプセル</h3>
+							<p>
+								マテリアルを使って、透けている様子を表現しました。<br>
+								カラフルでポップな感じにしました。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/heart.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/heart.png" alt="heart">
+							<img src="./images/heart.jpg" alt="heart">
 						</picture>
-						<h3>ハート</h3>
-						<p>
-							画像をエンプティにして不透明化し、画像に合わせて作りました。<br>
-						</p>
+						<div class="gallery__caption">
+							<h3>ハート</h3>
+							<p>
+								画像をエンプティにして不透明化し、画像に合わせて作りました。<br>
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/Balloon.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/Balloon1.png" alt="Balloon1">
+							<img src="./images/Balloon.jpg" alt="Balloon1">
 						</picture>
-						<picture>
-							<img src="./images/Balloon2.png" alt="Balloon2">
-						</picture>
-						<h3>ハートのバルーン</h3>
-						<p>
-							ハート型のバルーンが空を飛んでいる様子です。<br>
-							バルーンのツヤっとした質感とシワを作ることが大変でした。<br>
-							背景はHDRI画像を使って、空を表現しています。
-						</p>
+						<div class="gallery__caption">
+							<h3>ハートのバルーン</h3>
+							<p>
+								ハート型のバルーンが空を飛んでいる様子です。<br>
+								バルーンのツヤっとした質感とシワを作ることが大変でした。<br>
+								背景はHDRI画像を使って、空を表現しています。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/jerry.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/jerry1.png" alt="jerry1">
+							<img src="./images/jerry.jpg" alt="jerry1">
 						</picture>
-						<picture>
-							<img src="./images/jerry2.png" alt="jerry2">
-						</picture>
-						<h3>ゼリー</h3>
-						<p>
-							透け感のあるぷるんとしたゼリーです。<br>
-							クリームを作ることが大変で、何度もやり直しました。
-						</p>
+						<div class="gallery__caption">
+							<h3>ゼリー</h3>
+							<p>
+								透け感のあるぷるんとしたゼリーです。<br>
+								クリームを作ることが大変で、何度もやり直しました。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/cake.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/cake1.png" alt="cake1">
+							<img src="./images/cake.jpg" alt="cake1">
 						</picture>
-						<picture>
-							<img src="./images/cake2.png" alt="cake2">
-						</picture>
-						<h3>バースデーケーキ</h3>
-						<p>
-							韓国風のバースデーケーキです。<br>
-							ソースが垂れているところと、ピンクでまとめて華やかな雰囲気にしたところが気に入っています。
-						</p>
+						<div class="gallery__caption">
+							<h3>バースデーケーキ</h3>
+							<p>
+								韓国風のバースデーケーキです。<br>
+								ソースが垂れているところと、ピンクでまとめて華やかな雰囲気にしたところが気に入っています。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/animal.png" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/animal1.png" alt="animal1">
+							<img src="./images/animal.png" alt="animal1">
 						</picture>
-						<picture>
-							<img src="./images/animal2.png" alt="animal2">
-						</picture>
-						<h3>ねこ、うさぎ、くまのぬいぐるみ</h3>
-						<p>
-							三匹の動物のぬいぐるみです。<br>
-							ふわふわの質感を再現することが大変でした。
-						</p>
+						<div class="gallery__caption">
+							<h3>ねこ、うさぎ、くまのぬいぐるみ</h3>
+							<p>
+								三匹の動物のぬいぐるみです。<br>
+								ふわふわの質感を再現することが大変でした。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/puddingandsoda.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/puddingandsoda.png" alt="puddingandsoda">
+							<img src="./images/puddingandsoda.jpg" alt="puddingandsoda">
 						</picture>
-						<h3>レトロプリンとクリームソーダ</h3>
-						<p>
-							硬めのプリンと懐かしさのあるクリームソーダです。<br>
-							ノードを使ってプリンの質感を出しました。<br>
-							作ってきた作品の中で一番のお気に入りです。
-						</p>
+						<div class="gallery__caption">
+							<h3>レトロプリンとクリームソーダ</h3>
+							<p>
+								硬めのプリンと懐かしさのあるクリームソーダです。<br>
+								ノードを使ってプリンの質感を出しました。<br>
+								作ってきた作品の中で一番のお気に入りです。
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/donut.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/donut1.png" alt="donut1">
+							<img src="./images/donut.jpg" alt="donut1">
 						</picture>
-						<picture>
-							<img src="./images/donut2.png" alt="donut2">
-						</picture>
-						<h3>オールドファッションとアイスティー</h3>
-						<p>
-							ドーナツをたくさん作りました。<br>
-							テクスチャペイントや、ノードを使ってドーナツの質感を表現しています。<br>
-						</p>
+						<div class="gallery__caption">
+							<h3>オールドファッションとアイスティー</h3>
+							<p>
+								ドーナツをたくさん作りました。<br>
+								テクスチャペイントや、ノードを使ってドーナツの質感を表現しています。<br>
+							</p>
+						</div>
 					</li>
 
-					<li>
+					<li data-src="./images/strawberrymilk.jpg" data-sub-html=".gallery__caption">
 						<picture>
-							<img src="./images/strawberrymilk.png" alt="strawberrymilk">
+							<img src="./images/strawberrymilk.jpg" alt="strawberrymilk">
 						</picture>
-						<h3>いちごミルク</h3>
-						<p>
-							ファンシーないちごミルクを作りました。<br>
-							ノードを使っていちごの粒感、まだらに混ざっている様子を表現しています。<br>
-						</p>
+						<div class="gallery__caption">
+							<h3>いちごミルク</h3>
+							<p>
+								ファンシーないちごミルクを作りました。<br>
+								ノードを使っていちごの粒感、まだらに混ざっている様子を表現しています。<br>
+							</p>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
 	</main>
 
-	<footer>
-		<small>©ShokoMaeda2024</small>
+	<footer class="footer">
+		<small>&copy; ShokoMaeda 2024</small>
 	</footer>
+	<script type="text/javascript">
+		lightGallery(document.querySelector("#js-gallery"), {
+			subHtmlSelectorRelative: true
+		});
+	</script>
 </body>
+
 </html>
